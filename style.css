@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+.hero {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+section {
+    padding: 40px 0;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: 500;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    background: #4ca1af;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+form button:hover {
+    background: #357f87;
+}
+.socials p {
+    margin: 5px 0;
+}
+.socials a {
+    color: #4ca1af;
+    text-decoration: none;
+}
+.socials a:hover {
+    text-decoration: underline;
+}
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+.fade-in.delay-1 {
+    animation-delay: 0.5s;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
